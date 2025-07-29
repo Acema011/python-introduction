@@ -1,4 +1,4 @@
-from src import fizzbuzz
+from src import *
 
 def test_1_return_1():
     assert fizzbuzz(1) == "1"
@@ -17,3 +17,6 @@ def test_6_return_Fizz():
 
 def test_15_return_FizzBuzz():
     assert fizzbuzz(15) == "FizzBuzz"
+
+def test_fizzbuzz_from_range():
+    assert fizzbuzz_from_range(1,15) == "12Fizz4BuzzFizz78FizzBuzz11Fizz1314FizzBuzz"
